@@ -1,0 +1,48 @@
+$header-height: 75px;
+$footer-height: 50px;
+
+$border-style: rgb(207, 207, 207) solid 1px ;
+
+.site-container{
+
+    .site-header{
+        height: $header-height;
+        background-color: rgb(252, 252, 252);
+        border-bottom: $border-style;
+        padding: 5px 10px;
+
+        .site-header-text{
+            padding-top: 35px;
+            font-size: 46px;
+        }
+    }
+
+    .site-content{
+        position: absolute;
+        top: $header-height;
+        width: 100%;
+
+        .site-body{
+            width: 100%;
+            background-color: white;
+            min-height: calc(100vh - #{$header-height} - #{$footer-height});
+            height: auto !important;
+        }
+    
+        .site-footer{
+            height: $footer-height;
+            background-color: rgb(252, 252, 252);
+            width: 100%;
+
+            border-top: $border-style;
+
+            .footer-text{
+                text-align: center;
+                margin-top: 10px;
+
+                color: grey;
+            }
+        }
+    }
+
+}
